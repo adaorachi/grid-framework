@@ -143,7 +143,6 @@ $units: map-merge(
   $units
 );
 
-
 // Units measures in pixels for borders radius
 
 $border-sizes: ();
@@ -160,7 +159,6 @@ $border-sizes: map-merge(
   ),
   $border-sizes
 );
-
 
 // Units measures in header tags font sizes
 
@@ -199,7 +197,6 @@ $font-sizes: map-merge(
 );
 
 // FONT PROPERTIES
-
 // Google font-families
 
 $font-families: ();
@@ -213,7 +210,6 @@ $font-families: map-merge(
     "Quicksand": "Quicksand",
     "Cardo": "Cardo",
   ),
-
   $font-families
 );
 
@@ -270,7 +266,6 @@ $font-weight: map-merge(
 );
 
 // BODY
-
 // Settings for the `<body>` element.
 
 $body-bg: $white !default;
@@ -310,7 +305,6 @@ $grid-widths: map-merge(
 );
 
 // Grid containers
-//
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
