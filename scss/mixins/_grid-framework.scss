@@ -1,0 +1,34 @@
+@mixin col-class($col){
+    position: positions(relative);
+    width: $col;
+    padding-right: sizes(3);
+    padding-left: sizes(3);
+    flex: 0 0 $col;
+    max-width: $col;
+}
+
+@mixin col($infix) {
+    @each $num, $col in $grid-widths {   
+        @if $infix == "default" {
+            .col-#{$num}{
+                @include col-class($col)
+            }
+            .offset-right-#{$num}{
+                margin-right: $col
+            }
+            .offset-left-#{$num}{
+                margin-left: $col
+            }
+        }@else{
+            .col-#{$infix}-#{$num}{
+                @include col-class($col)
+            }
+            .offset-right-#{$infix}-#{$num}{
+                margin-right: $col
+            }
+            .offset-left-#{$infix}-#{$num}{
+                margin-left: $col
+            }
+        }
+    }
+}
