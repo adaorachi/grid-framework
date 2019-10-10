@@ -20,7 +20,7 @@ The link below is a preview of one of sites cloned with this framework. We got o
 <a href="https://raw.githack.com/JayKowski/sass-framework/news-page/index.html">Yogalax clone page </a>
 
 ## Screenshots
-<img src="images/screenshot.jpg"><br><br>
+<img src="images/screenshots.jpg"><br><br>
 
 ## Technologies
 * HTML5
