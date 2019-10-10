@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Yogalax | Grid-Framework</title>
+
+    <style>
+        .background-img{
+            background: linear-gradient(to right, #d291bc7a, transparent), 
+            url("https://colorlib.com/preview/theme/yogalax/images/bg_2.jpg");
+            background-position: 60% center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .background-img2{
+            background: url("https://colorlib.com/preview/theme/yogalax/images/intro.jpg");
+            background-position: 40% center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .background-img3{
+            background: linear-gradient(45deg, #f162c27a 0%, transparent 100%), url("https://colorlib.com/preview/theme/yogalax/images/bg_3.jpg");
+            background-position: 50% 10%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .pagination-button .button {
+            background: linear-gradient(to bottom, #a58ad663,rgb(94, 88, 126) );
+        }
+        .pagination-button .button.first {
+            background: linear-gradient(to top, #5817d1,#9571d8ad );
+        }
+        .quote {
+            top: 50%;
+            left: -20px;
+            transform: translateY(-50%);
+        }
+        .pricing-table .card .button {
+            bottom:-30px; 
+            left:0;
+        }
+        .yoga-classes .content-body .body {
+            transition: transform 500ms;
+        }
+
+        .yoga-classes .content-body .body:hover {
+            transform: scale(1.1);
+            z-index: 999;
+        }
+
+        .yoga-classes .content-body .heading {
+            top: 0;
+            opacity: 0;
+        }
+
+        .yoga-classes .content-body .heading:hover{
+            opacity: 1;
+            background: linear-gradient(to bottom, #6f42c163,rgb(94, 88, 126) );
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper-yogalax">
+        <header>
+            <section class="header">
+                <nav class="navbar navbar-shadow d-flex flex-md-column px-5 pos-fixed w-100 bg-white">
+                    <div class="d-flex justify-content-md-between w-md-100">
+                        <a class="navbar-brand c-light-indigo text-transform-upper c-purple font-size-6">
+                            <span class="logo">
+                                <i class="fas fa-spa"></i>
+                                Yogalax
+                            </span>
+                        </a>
+                        <div class="navbar-toggler">
+                            <i class="fas fa-bars toggle"></i>
+                            <i class="fas fa-times toggle"></i>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav flex-row flex-md-column align-self-md-start align-items-md-start font-size-8">
+                        <li class="nav-item mr-4 my-md-3 mr-md-0">
+                            <a href="#" class="nav-link  c-purple">Home</a>
+                        </li>
+                        <li class="nav-item mr-4 my-md-3 mr-md-0">
+                            <a href="#" class="nav-link c-purple">Classes</a>
+                        </li>
+                        <li class="nav-item mr-4 my-md-3 mr-md-0">
+                            <a href="#" class="nav-link c-purple">Schedule</a>
+                        </li>
+                        <li class="nav-item mr-4 my-md-3 mr-md-0">
+                            <a href="#" class="nav-link c-purple">About</a>
+                        </li>
+                        <li class="nav-item mr-4 my-md-3 mr-md-0">
+                            <a href="#" class="nav-link c-purple">Blog</a>
+                        </li>
+                        <li class="nav-item mr-4 my-md-3 mr-md-0">
+                            <a href="#" class="nav-link c-purple">Contact</a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class="background-img bg-repeat-no-repeat bg-size-cover h-px-800 h-px-md-500 w-100">
+                    <div class="row h-100 no-gutters px-4 justify-content-center align-items-center">
+                        <div class="col-md-12 offset-right-6 offset-right-md-1 ml-5 d-flex flex-column">
+                            <div class="heading c-gray-dark">
+                                <h1 class="font-size-2 font-size-lg-3 font-size-md-4 font-size-sm-5 line-height-1 line-height-md-3 font-weight-lighter">Flexibility is A Second Power.</h1>
+                                <h3 class="font-size-4 font-size-lg-6 font-size-sm-7 line-height-3 line-height-md-4 font-weight-lighter mt-4">Do Yoga today for a better tomorrow</h3>
+                            </div>
+                            <div class="button w-100 mt-5">
+                                <a href="#" class="btn border-purple border-radius-25 bg-purple c-white font-size-8 font-size-md-9 py-2">12 days free trial</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+        </header>
+
+        <main>
+            <section class="go-to-yoga background-img2 bg-repeat-no-repeat bg-size-cover h-px-800 h-px-md-600 w-100">
+                <div class="container-fluid h-100">
+                    <div class="row h-100">
+                        <div class="col-6 col-md-2">
+                        </div>
+                        <div class="col-6 col-md-10 c-gray-dark d-flex flex-column justify-content-center align-items-center">
+                            <h3 class="font-size-2 font-size-lg-3 font-size-md-4 font-size-sm-5 line-height-1 line-height-md-3 font-weight-lighter">Why You Should Go To Yoga</h3>
+                            <p class="font-size-7 font-size-md-8 my-5 my-md-3 line-height-sm-4 c-gray">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                            <ul class="nav-list align-self-start flex-column text-left">
+                                <li class="nav-item my-2"> 
+                                    <a class="nav-link font-size-7 font-size-md-8  c-purple">
+                                        <span> <i class="fas fa-check-circle font-size-7 font-size-md-8"></i> Yoga boosts brain power</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2"> 
+                                    <a class="nav-link font-size-7 font-size-md-8 c-purple">
+                                        <span> <i class="fas fa-check-circle font-size-7 font-size-md-8"></i> Yoga helps you to breathe better</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2"> 
+                                    <a class="nav-link font-size-7 font-size-md-8  c-purple">
+                                        <span> <i class="fas fa-check-circle font-size-7 font-size-md-8"></i> Yoga improves your strength</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2"> 
+                                    <a class="nav-link font-size-7  font-size-md-8  c-purple">
+                                        <span> <i class="fas fa-check-circle font-size-7 font-size-md-8"></i> Yoga helps you to focus</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item my-2"> 
+                                    <a class="nav-link font-size-7 font-size-md-8 c-purple">
+                                        <span> <i class="fas fa-check-circle font-size-7 font-size-md-8"></i> Yoga helps give meaning to your day</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="healthy-lifestyle bg-gray-100 py-5">
+                <div class="container">
+                    <div class="row no-gutters flex-row flex-wrap">
+                        <div class="col-3 col-lg-6 col-sm-12 d-flex flex-column pb-3">
+                            <div class="icon py-3 align-self-center">
+                                <span>
+                                    <i class="far fa-heart bg-light-purple c-white icon-circle-5"></i>
+                                </span>
+                            </div>
+                            <div class="heading text-center px-lg-4">
+                                <h4 class="font-size-7">Healthy Lifestyle</h4>
+                                <p class="font-size-8">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-3 col-lg-6 col-sm-12 d-flex flex-column pb-3">
+                            <div class="icon py-3 align-self-center">
+                                <span>
+                                    <i class="fas fa-hand-holding-heart bg-light-purple c-white icon-circle-5"></i>
+                                </span>
+                            </div>
+                            <div class="heading text-center px-lg-4">
+                                <h4 class="font-size-7">Meditation Practice</h4>
+                                <p class="font-size-8">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                            </div>
+                        </div>
+
+                        <div class="col-3 col-lg-6 col-sm-12 d-flex flex-column pb-3">
+                            <div class="icon py-3 align-self-center">
+                                <span>
+                                    <i class="fas fa-spa bg-light-purple c-white icon-circle-5"></i>
+                                </span>
+                            </div>
+                            <div class="heading text-center px-lg-4">
+                                <h4 class="font-size-7">Edeology</h4>
+                                <p class="font-size-8">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                            </div>
+                        </div>
+
+                        <div class="col-3 col-lg-6 col-sm-12 d-flex flex-column pb-3">
+                            <div class="icon py-3 align-self-center">
+                                <span>
+                                    <i class="fas fa-fan bg-light-purple  c-white icon-circle-5"></i>
+                                </span>
+                            </div>
+                            <div class="heading text-center px-lg-4">
+                                <h4 class="font-size-7">Body & Mind Balance</h4>
+                                <p class="font-size-8">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="yoga-classes bg-white py-5 mt-5 mt-md-0">
+                <div class="container">
+                    <div class="heading text-center">
+                        <h5 class="text-transform-upper font-size-8 c-gray-500 font-weight-lighter">Yoga classes</h5>
+                        
+                        <h3 class="font-size-2 font-size-lg-3 font-size-md-4 font-size-sm-5 line-height-1 line-height-md-3 font-weight-lighter">Choose Your Level & Focus</h3>
+                    </div>
+                
+                <div class="content-body px-5 mx-3 my-5">
+                    <div class="d-grid grid-column-3 grid-column-lg-2 grid-column-md-1">
+                        <div class="body pos-relative">
+                            <div class="image h-px-400 h-px-sm-300">
+                                <img src="https://colorlib.com/preview/theme/yogalax/images/program-1.jpg" alt="" class="img-fluid h-100 object-fit-cover">
+                            </div>
+                            <div class="text">
+                                <div class="heading text-center c-white py-5 px-5 d-flex flex-column justify-content-center align-items-center pos-absolute h-100">
+                                    <h4 class="font-size-7 text-transform-cap">Group lessons</h4>
+                                    <p class="font-size-8">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body pos-relative">
+                            <div class="image h-px-400 h-px-sm-300">
+                                <img src="https://colorlib.com/preview/theme/yogalax/images/program-2.jpg" alt="" class="img-fluid h-100 object-fit-cover">
+                            </div>
+                            <div class="text">
+                                <div class="heading text-center c-white py-5 px-5 d-flex flex-column justify-content-center align-items-center pos-absolute h-100">
+                                    <h4 class="font-size-7 text-transform-cap">Yoga for Beginners</h4>
+                                    <p class="font-size-8">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body pos-relative">
+                            <div class="image h-px-400 h-px-sm-300">
+                                <img src="https://colorlib.com/preview/theme/yogalax/images/program-3.jpg" alt="" class="img-fluid h-100 object-fit-cover">
+                            </div>
+                            <div class="text">
+                                <div class="heading text-center c-white py-5 px-5 d-flex flex-column justify-content-center align-items-center pos-absolute h-100">
+                                    <h4 class="font-size-7 text-transform-cap">Yoga for pregnant</h4>
+                                    <p class="font-size-8">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body pos-relative">
+                            <div class="image h-px-400 h-px-sm-300">
+                                <img src="https://colorlib.com/preview/theme/yogalax/images/program-4.jpg" alt="" class="img-fluid h-100 object-fit-cover">
+                            </div>
+                            <div class="text">
+                                <div class="heading text-center c-white py-5 px-5 d-flex flex-column justify-content-center align-items-center pos-absolute h-100">
+                                    <h4 class="font-size-7 text-transform-cap">Yoga for couples</h4>
+                                    <p class="font-size-8">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body pos-relative">
+                            <div class="image h-px-400 h-px-sm-300">
+                                <img src="https://colorlib.com/preview/theme/yogalax/images/program-5.jpg" alt="" class="img-fluid h-100 object-fit-cover">
+                            </div>
+                            <div class="text">
+                                <div class="heading text-center c-white py-5 px-5 d-flex flex-column justify-content-center align-items-center pos-absolute h-100">
+                                    <h4 class="font-size-7 text-transform-cap">Bikram Yoga</h4>
+                                    <p class="font-size-8">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body pos-relative">
+                            <div class="image h-px-400 h-px-sm-300">
+                                <img src="https://colorlib.com/preview/theme/yogalax/images/program-6.jpg" alt="" class="img-fluid h-100 object-fit-cover">
+                            </div>
+                            <div class="text">
+                                <div class="heading text-center c-white py-5 px-5 d-flex flex-column justify-content-center align-items-center pos-absolute h-100">
+                                    <h4 class="font-size-7 text-transform-cap">Yoga barre</h4>
+                                    <p class="font-size-8">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <section class="pricing-table bg-gray-100 py-5 py-md-3">
+                <div class="container">
+                    <div class="heading text-center mt-5">
+                        <h5 class="text-transform-upper font-size-8 c-gray-500 font-weight-lighter">Pricing tables</h5>
+                        <h3 class="font-size-2 font-size-lg-3 font-size-md-4 font-size-sm-5 line-height-1 line-height-md-3 font-weight-lighter">Membership Cards</h3>
+                    </div>
+
+                    <div class="body my-5 mx-5 my-md-0">
+                        <div class="row flex-wrap">
+                            <div class="col-4 col-lg-6 col-md-12 my-lg-5">
+                                <div class="card d-flex flex-column text-center font-size-8 py-5 px-5 px-lg-3 pos-relative">
+                                    <h4 class="font-size-9 text-transform-upper font-weight-bold">Year card</h4>
+                                    <div class="price font-size-2 c-purple font-weight-bold">
+                                        <span> 
+                                            <sup class="font-size-6">$</sup>449
+                                        </span>
+                                    </div>
+                                    <div class="duration c-gray-500 line-height-2 text-transform-cap font-size-9">For 1 year</div>
+                                    <div class="features my-2 font-weight-bold text-transform-upper font-size-8">Enjoy all the features</div>
+                                    <ul class="nav-list d-flex flex-column c-gray text-transform-cap">
+                                        <li class="nav-item py-2">Onetime access to all club</li>
+                                        <li class="nav-item py-2">Group trainer</li>
+                                        <li class="nav-item py-2">Book a group class</li>
+                                        <li class="nav-item py-2">Fitness orientation</li>
+                                    </ul>
+                                    <div class="button pos-absolute w-100">
+                                        <a href="#" class="btn bg-purple text-transform-upper c-white border-radius-50 font-size-9 w-75">Get Started</a>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            <div class="col-4 col-lg-6 col-md-12 my-lg-5">
+                                <div class="card d-flex flex-column text-center font-size-8 py-5 px-5 px-lg-3 pos-relative">
+                                    <h4 class="font-size-9 text-transform-upper font-weight-bold">Monthly card</h4>
+                                    <div class="price font-size-2 c-purple font-weight-bold">
+                                        <span> 
+                                            <sup class="font-size-6">$</sup>200
+                                        </span>
+                                    </div>
+                                    <div class="duration c-gray-500 line-height-2 text-transform-cap font-size-9">For 1 month</div>
+                                    <div class="features my-2 font-weight-bold text-transform-upper font-size-8">Enjoy all the features</div>
+                                    <ul class="nav-list d-flex flex-column c-gray text-transform-cap">
+                                        <li class="nav-item py-2">Group Classes</li>
+                                        <li class="nav-item py-2">Group trainer</li>
+                                        <li class="nav-item py-2">Discuss fitness goals</li>
+                                        <li class="nav-item py-2">Fitness orientation</li>
+                                    </ul>
+                                    <div class="button pos-absolute w-100">
+                                        <a href="#" class="btn bg-purple text-transform-upper c-white border-radius-50 font-size-9 w-75">Get Started</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-4 col-lg-6 col-md-12 my-lg-5">
+                                <div class="card d-flex flex-column text-center font-size-8 py-5 px-5 px-lg-3 pos-relative">
+                                    <h4 class="font-size-9 text-transform-upper font-weight-bold">Weekly card</h4>
+                                    <div class="price font-size-2 c-purple font-weight-bold">
+                                        <span> 
+                                            <sup class="font-size-6">$</sup>85
+                                        </span>
+                                    </div>
+                                    <div class="duration c-gray-500 line-height-2 text-transform-cap font-size-9">For 1 week</div>
+                                    <div class="features my-2 font-weight-bold text-transform-upper font-size-8">Enjoy all the features</div>
+                                    <ul class="nav-list d-flex flex-column c-gray text-transform-cap">
+                                        <li class="nav-item py-2">Group classes</li>
+                                        <li class="nav-item py-2">Discuss fitness goals</li>
+                                        <li class="nav-item py-2">group trainer</li>
+                                        <li class="nav-item py-2">Fitness Orientation</li>
+                                    </ul>
+                                    <div class="button pos-absolute w-100">
+                                        <a href="#" class="btn bg-purple text-transform-upper c-white border-radius-50 font-size-9 w-75">Get Started</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimony py-5">
+                <div class="container">
+                    <div class="heading text-center mt-5 mt-md-3">
+                        <h5 class="text-transform-upper font-size-8 c-gray-500 font-weight-lighter">Testimony</h5>
+                        <h3 class="font-size-2 font-size-lg-3 font-size-md-4 font-size-sm-5 line-height-1 line-height-md-3 font-weight-lighter">Successful Stories</h3>
+                    </div>
+                    <div class="body my-5 pt-3 overflow-hidden">
+                        <div class="row flex-nowrap overflow-y-hidden overflow-x-scroll mb-neg-5 pb-5">
+                            <div class="col-4 col-lg-6 col-sm-12">
+                                <div class="line upper mx-5 d-flex flex-row border-left-gray-500 pos-relative">
+                                    <span class="quote pos-absolute">
+                                        <i class="fas fa-quote-left c-white bg-purple icon-circle-7"></i>
+                                    </span>
+                                    <p class="pl-5 mb-0 c-gray-600">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                </div>
+                                <div class="lower mt-4 d-flex justify-content-center align-items-center">
+                                    <div class="image w-25 mr-4">
+                                        <img src="https://colorlib.com/preview/theme/yogalax/images/person_1.jpg" alt="" class="img-fluid border-radius-50"> 
+                                    </div>
+                                    <div class="name">
+                                        <div class="font-weight-bold">Gabby Smith</div>
+                                        <div class="c-gray-500 font-size-9">Customer</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-lg-6 col-sm-12">
+                                <div class="line upper mx-5 d-flex flex-row border-left-gray-500 pos-relative">
+                                    <span class="quote pos-absolute">
+                                        <i class="fas fa-quote-left c-white bg-purple icon-circle-7"></i>
+                                    </span>
+                                    <p class="pl-5 mb-0 c-gray-600">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                </div>
+                                <div class="lower mt-4  d-flex justify-content-center align-items-center">
+                                    <div class="image w-25 mr-4">
+                                        <img src="https://colorlib.com/preview/theme/yogalax/images/person_2.jpg" alt="" class="img-fluid border-radius-50"> 
+                                    </div>
+                                    <div class="name">
+                                        <div class="font-weight-bold">Floyd Weather</div>
+                                        <div class="c-gray-500 font-size-9">Customer</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-lg-6 col-sm-12">
+                                <div class="line upper mx-5 d-flex flex-row border-left-gray-500 pos-relative">
+                                    <span class="quote pos-absolute">
+                                        <i class="fas fa-quote-left c-white bg-purple icon-circle-7"></i>
+                                    </span>
+                                    <p class="pl-5 mb-0 c-gray-600">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                </div>
+                                <div class="lower mt-4 d-flex justify-content-center align-items-center">
+                                    <div class="image w-25 mr-4">
+                                        <img src="https://colorlib.com/preview/theme/yogalax/images/person_3.jpg" alt="" class="img-fluid border-radius-50"> 
+                                    </div>
+                                    <div class="name">
+                                        <div class="font-weight-bold">Jamie Dee</div>
+                                        <div class="c-gray-500 font-size-9">Customer</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-lg-6 col-sm-12">
+                                <div class="line upper mx-5 d-flex flex-row border-left-gray-500 pos-relative">
+                                    <span class="quote pos-absolute">
+                                        <i class="fas fa-quote-left c-white bg-purple icon-circle-7"></i>
+                                    </span>
+                                    <p class="pl-5 mb-0 c-gray-600">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                </div>
+                                <div class="lower mt-4 d-flex justify-content-center align-items-center">
+                                    <div class="image w-25 mr-4">
+                                        <img src="https://colorlib.com/preview/theme/yogalax/images/person_4.jpg" alt="" class="img-fluid border-radius-50"> 
+                                    </div>
+                                    <div class="name">
+                                        <div class="font-weight-bold">Lance Roger</div>
+                                        <div class="c-gray-500 font-size-9">Customer</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-lg-6 col-sm-12">
+                                <div class="line upper mx-5 d-flex flex-row border-left-gray-500 pos-relative">
+                                    <span class="quote pos-absolute">
+                                        <i class="fas fa-quote-left c-white bg-purple icon-circle-7"></i>
+                                    </span>
+                                    <p class="pl-5 mb-0 c-gray-600">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                </div>
+                                <div class="lower mt-4 d-flex justify-content-center align-items-center">
+                                    <div class="image w-25 mr-4">
+                                        <img src="https://colorlib.com/preview/theme/yogalax/images/person_1.jpg" alt="" class="img-fluid border-radius-50"> 
+                                    </div>
+                                    <div class="name">
+                                        <div class="font-weight-bold">Sammie Derk</div>
+                                        <div class="c-gray-500 font-size-9">Customer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination-button d-flex justify-content-center align-items-center">
+                        <div class="first small-circle-but button mx-2 border-radius-50"></div>
+                        <div class="button small-circle-but mx-2 border-radius-50"></div>
+                        <div class="button small-circle-but mx-2 border-radius-50"></div>
+                        <div class="button small-circle-but mx-2 border-radius-50"></div>
+                        <div class="button small-circle-but mx-2 border-radius-50"></div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="happy-customer section-six">
+                <div class="body background-img3 h-px-400 w-100 bg-size-cover">
+                    <div class="container h-100">
+                        <div class="row h-100 justify-content-center align-items-center px-5 mx-5 px-md-3 mx-md-2">
+                            <div class="col-3 col-lg-6 text-center c-white">
+                                <div class="num font-size-2 font-size-md-4 font-weight-bold">5,000</div>
+                                <div class="text">Happy Customers</div>
+                            </div>
+                            <div class="col-3 col-lg-6 text-center c-white">
+                                <div class="num font-size-2 font-size-md-4 font-weight-bold">4,560</div>
+                                <div class="text">Yoga Workshops</div>
+                            </div>
+                            <div class="col-3 col-lg-6 text-center c-white">
+                                <div class="num font-size-2 font-size-md-4 font-weight-bold">570</div>
+                                <div class="text">Years of Experience</div>
+                            </div>
+                            <div class="col-3 col-lg-6 text-center c-white">
+                                <div class="num font-size-2 font-size-md-4 font-weight-bold">900</div>
+                                <div class="text">Lessons Conducted</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </section>
+
+            <section class="blog-posts py-5 bg-gray-100">
+                <div class="container h-100">
+                    <div class="heading text-center mt-5 mt-md-3">
+                        <h5 class="text-transform-upper font-size-8 c-gray-500 font-weight-lighter">Blog</h5>
+                        <h3 class="font-size-2 font-size-lg-3 font-size-md-4 font-size-sm-5 line-height-1 line-height-md-3 font-weight-lighter">Recent Posts</h3>
+                    </div>
+                    <div class="row no-gutters body px-4 w-100">
+                        <div class="col-4 col-lg-6 col-sm-12 my-5 px-4">      <div class="bg-white">
+                                <div class="image h-px-300 h-px-md-200">
+                                    <img src="https://colorlib.com/preview/theme/yogalax/images/image_1.jpg" alt="" class="img-fluid h-100 object-fit-cover">
+                                </div>
+                                <div class="info py-3 px-4">
+                                    <div class="date d-flex justify-content-start align-items-center">
+                                        <span class="font-size-2 c-purple">31</span>
+                                        <div class="ml-4 c-gray-500">
+                                            <div>2018</div>
+                                            <div>December</div>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <h4 class="font-size-7 my-3">Young Women Doing Yoga</h4>
+                                        <p class="c-gray-500">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-lg-6 col-sm-12 my-5 px-4">
+                            <div class="bg-white">
+                                <div class="image h-px-300 h-px-md-200">
+                                    <img src="https://colorlib.com/preview/theme/yogalax/images/image_2.jpg" alt="" class="img-fluid h-100 object-fit-cover">
+                                </div>
+                                <div class="info py-3 px-4">
+                                    <div class="date d-flex justify-content-start align-items-center">
+                                        <span class="font-size-2 c-purple">27</span>
+                                        <div class="ml-4 c-gray-500">
+                                            <div>2018</div>
+                                            <div>December</div>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <h4 class="font-size-7 my-3">Young Women Doing Yoga</h4>
+                                        <p class="c-gray-500">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                    </div>
+                                </div>
+                        </div> 
+                        </div>
+
+                        <div class="col-4 col-lg-6 col-sm-12 my-5 px-4">
+                            <div class="bg-white">
+                                <div class="image h-px-300 h-px-md-200">
+                                    <img src="https://colorlib.com/preview/theme/yogalax/images/image_3.jpg" alt="" class="img-fluid h-100 object-fit-cover">
+                                </div>
+                                <div class="info py-3 px-4">
+                                    <div class="date d-flex justify-content-start align-items-center">
+                                        <span class="font-size-2 c-purple">25</span>
+                                        <div class="ml-4 c-gray-500">
+                                            <div>2018</div>
+                                            <div>December</div>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <h4 class="font-size-7 my-3">Young Women Doing Yoga</h4>
+                                        <p class="c-gray-500">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallary py-5 bg-white">
+                <div class="container h-100">
+                    <div class="heading text-center mt-5 mt-md-3">
+                        <h5 class="text-transform-upper font-size-8 c-gray-500 font-weight-lighter">Gallery</h5>
+                        <h3 class="font-size-2 font-size-lg-3 font-size-md-4 font-size-sm-5 line-height-1 line-height-md-3 font-weight-lighter">See the lastest photos</h3>
+                    </div>
+                    <div class="body d-flex flex-wrap mx-4">
+                        <div class="flex-basis-3 flex-basis-lg-6 flex-basis-sm-12 py-4 px-4 bg-white">    
+                            <div class="image h-px-300 h-px-md-200">
+                                <img src="https://colorlib.com/preview/theme/yogalax/images/gallery-1.jpg" alt="" class="img-fluid h-100 object-fit-cover">
+                            </div>
+                        </div>
+
+                        <div class="flex-basis-3 flex-basis-lg-6 flex-basis-sm-12 py-4 px-4 bg-white">    
+                            <div class="image h-px-300 h-px-md-200">
+                                <img src="https://colorlib.com/preview/theme/yogalax/images/gallery-2.jpg" alt="" class="img-fluid h-100 object-fit-cover">
+                            </div>
+                        </div>
+
+                        <div class="flex-basis-3 flex-basis-lg-6 flex-basis-sm-12 py-4 px-4 bg-white">    
+                            <div class="image h-px-300 h-px-md-200">
+                                <img src="https://colorlib.com/preview/theme/yogalax/images/gallery-3.jpg" alt="" class="img-fluid h-100 object-fit-cover">
+                            </div>
+                        </div>
+
+                        <div class="flex-basis-3 flex-basis-lg-6 flex-basis-sm-12 py-4 px-4 bg-white">    
+                            <div class="image h-px-300 h-px-md-200">
+                                <img src="https://colorlib.com/preview/theme/yogalax/images/gallery-4.jpg" alt="" class="img-fluid h-100 object-fit-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        <footer class="footer py-4 px-md-4 bg-purple c-white">
+                <div class="container">
+                    <div class="content d-flex flex-wrap justify-content-center align-items-center px-5 py-3">
+                        <div class="logo font-size-6 flex-grow-1 text-center my-2">
+                            <h4>Yogalax</h4>
+                        </div>
+                        <div class="address font-size-7 font-size-md-8 flex-grow-3 text-center my-2">
+                            <address>
+                                203 Fake St. Mountain View, San Francisco, California, USA
+                            </address>
+                        </div>
+                        <div class="footer-icons my-2">
+                            <ul class="navbar-nav font-size-6">
+                                <li class="nav-item mx-2">
+                                    <a href="#" class="nav-link">
+                                        <i class="fab fa-twitter c-white bg-light-purple icon-circle-7"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a href="#" class="nav-link">
+                                        <i class="fab fa-facebook-f c-white bg-light-purple icon-circle-7"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a href="#" class="nav-link">
+                                        <i class="fab fa-instagram c-white bg-light-purple icon-circle-7"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyright py-4 text-center">
+                        <p>Copyright ©2019 All rights reserved | This template is made with <i class="fas fa-heart c-white"></i> by Colorlib</p>
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+               
+            $(".navbar-toggler .fa-bars").click(function(){
+                $(".navbar .navbar-nav").toggleClass('open');
+                $(this).css('display','none');
+                $(".navbar-toggler .fa-times").css('display','flex');
+                
+            });
+            $(".navbar-toggler .fa-times").click(function(){
+                $(".navbar .navbar-nav").toggleClass('open');
+                $(this).css('display','none');
+                $(".navbar-toggler .fa-bars").css('display','flex');
+
+            });     
+            
+        });
+    </script>
+
+</body>
+</html>
