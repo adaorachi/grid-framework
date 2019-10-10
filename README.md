@@ -16,8 +16,10 @@ This project was undertaken so as to build a grid-based framework (similar to bo
 
 ## Setup & Live Preview
 This project is built with the basic web page structures and styling. It is pretty simple to setup. All you have to do is to clone the project into your local repository.<br>
-The link below is a preview of one of sites cloned with this framework. We got our inspiration from the <a href="https://colorlib.com/preview/theme/yogalax/"> Yogalax (A yoga website)</a><br>
-<a href="https://raw.githack.com/JayKowski/sass-framework/news-page/index.html">Yogalax clone page </a>
+This is a preview of one of sites cloned with this framework - <a href="https://raw.githack.com/JayKowski/sass-framework/news-page/index.html">Yogalax clone page </a>
+
+## Inspiration
+The inspiration to our cloned site is gotten from the <a href="https://colorlib.com/preview/theme/yogalax/"> Yogalax (A yoga website)</a>. The website uses a popular css grid framework (Bootstrap), hence our choice to clone it.
 
 ## Screenshots
 <img src="images/screenshots.jpg"><br><br>
