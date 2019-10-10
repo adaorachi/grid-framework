@@ -1,0 +1,51 @@
+@mixin width-height($infix) {
+  $scales: ("w":"width", "h":"height");
+
+  @each $num, $size in $sizes {
+    @each $scale_prefix, $scale in $scales {
+      @if $infix == "default" {
+        .#{$scale_prefix}-#{$num} {
+          #{$scale}: $size;
+          max-#{$scale}: $size;
+        }
+      }
+
+      @else {
+        .#{$scale_prefix}-#{$infix}-#{$num} {
+          #{$scale}: $size;
+          max-#{$scale}: $size;
+        }
+      }
+    }
+  }
+
+  @each $num, $unit in $units {
+    @each $scale_prefix, $scale in $scales {
+      @if $infix == "default" {
+        .#{$scale_prefix}-px-#{$num} {
+          #{$scale}: $unit;
+        }
+      }
+
+      @else {
+        .#{$scale_prefix}-px-#{$infix}-#{$num} {
+          #{$scale}: $unit;
+        }
+      }
+    }
+  }
+
+  @each $num, $size in $border-sizes {
+    @if $infix == "default" {
+      .border-radius-#{$num} {
+        border-radius: $size;
+      }
+    }
+
+    @else {
+      .border-radius-#{$infix}-#{$num} {
+        border-radius: $size;
+      }
+    }
+  }
+}
