@@ -1,5 +1,5 @@
 @mixin google-font($family) {
-    @import url("http://fonts.googleapis.com/css?family=#{$family}&display=swap");
+    @import url("https://fonts.googleapis.com/css?family=#{$family}&display=swap");
 }
 @include google-font(Quicksand);
 @include google-font(Cardo);
