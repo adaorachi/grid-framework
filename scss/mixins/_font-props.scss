@@ -1,0 +1,106 @@
+@mixin font-size($infix) {
+    @each $num, $size in $font-sizes{
+        @if $infix == "default" {
+            .font-size-#{$num} {
+                font-size: $size;
+            }
+
+            .icon-circle-#{$num} {
+                width: $size * 2 ;
+                height: $size * 2;
+                border-radius: 50%;
+                padding: $size / 2;
+                text-align: center;
+                font-size: $size;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }@else{
+            .font-size-#{$infix}-#{$num} {
+                font-size: $size;
+            }
+
+            .icon-circle-#{$infix}-#{$num} {
+                width: $size * 2 ;
+                height: $size * 2;
+                border-radius: 50%;
+                padding: $size / 2;
+                text-align: center;
+                font-size: $size;
+            }
+        }
+    }
+
+    @each $align_name, $align in $text-align{
+        @if $infix == "default" {
+            .text-#{$align_name} {
+                text-align: $align;
+            }
+        }@else{
+            .text-#{$infix}-#{$align_name} {
+                text-align: $align;
+            }
+        }
+    }
+
+
+    @each $decoration_name, $decoration in $text-decoration{
+        @if $infix == "default" {
+            .text-decoration-#{$decoration_name} {
+                text-decoration: $decoration;
+            }
+        }@else{
+            .text-decoration-#{$infix}-#{$decoration_name} {
+                text-decoration: $decoration;
+            }
+        }
+    }
+
+
+    @each $transform_name, $transform in $text-transform{
+        @if $infix == "default" {
+            .text-transform-#{$transform_name} {
+                text-transform: $transform;
+            }
+        }@else{
+            .text-transform-#{$infix}-#{$transform_name} {
+                text-transform: $transform;
+            }
+        }
+    }
+
+    @each $font-weight-name, $weight in $font-weight{
+        @if $infix == "default" {
+            .font-weight-#{$font-weight-name} {
+                font-weight: $weight;
+            }
+        }@else{
+            .font-weight-#{$infix}-#{$font-weight-name} {
+                font-weight: $weight;
+            }
+        }
+    }
+
+}
+
+@mixin heading-font($infix) {
+    @each $num, $size in $heading-fonts{
+        @if $infix == "default" {
+            h#{$num}.h#{$num}-#{$num} {
+                font-size: $size;
+            }
+            .line-height-#{$num} {
+                line-height: $size;
+            }
+        }@else{
+            h#{$num}.h#{$num}-#{$infix}-#{$num} {
+                font-size: $size;
+            }
+            .line-height-#{$infix}-#{$num} {
+                line-height: $size;
+            }
+        }
+    }
+}
