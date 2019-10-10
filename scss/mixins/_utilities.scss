@@ -1,0 +1,61 @@
+body{
+    background-color: $body-bg;
+    color: $gray-900;
+}
+
+.wrapper-yogalax{
+    font-family: font-families(Quicksand), sans-serif;
+}
+
+.wrapper-lifeleck{
+    font-family: font-families(Cardo), sans-serif;
+}
+
+@mixin positions ($infix) {
+    @each $name, $pos in $positions{
+        @if $infix == "default" {
+            .pos-#{$pos} {
+                position: $pos;
+            };
+        }@else{
+            .pos-#{$infix}-#{$pos}{
+                position: $pos;
+            }
+        }
+    }
+}
+
+@mixin displays ($infix) {
+    @each $name, $display in $displays{
+        @if $infix == "default" {
+            .d-#{$display} {
+                display: $display;
+            };
+        }@else{
+            .d-#{$infix}-#{$display}{
+                display: $display;
+            }
+        }
+    }
+}
+
+
+@mixin overflow (){
+    @each $overflow-prop in $overflow {
+        .overflow-#{$overflow-prop}{
+            overflow: $overflow-prop;
+        }
+        .overflow-x-#{$overflow-prop}{
+            overflow-x: $overflow-prop;
+        }
+        .overflow-y-#{$overflow-prop}{
+            overflow-y: $overflow-prop;
+        }
+    }
+}
+
+.card {
+    box-shadow: 1px 5px 10px #eee;
+    max-width: 350px;
+    margin: 0 auto;
+}
