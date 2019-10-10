@@ -29,7 +29,7 @@ The link below is a preview of one of sites cloned with this framework. We got o
 
 ## Features
 List of features ready and TODOs for future development
-* The project is an on-going and open-ended. We will keep updating it with features when needed.
+* The project is an on-going and open-ended one. We will keep updating it with features when needed.
 
 ## Status
 The project is currently finished.
