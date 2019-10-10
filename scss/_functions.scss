@@ -1,0 +1,23 @@
+@function font-families($family){
+	@return map-get($font-families, $family);
+}
+
+@function sizes($size){
+	@return map-get($spacers, $size);
+}
+
+@function widths($width){
+	@return map-get($sizes, $width);
+}
+
+@function display($display){
+	@return map-get($displays, $display);
+}
+
+@function positions($pos){
+	@return map-get($positions, $pos);
+}
+
+@function flex-wrap($wrap){
+	@return map-get($flex-wraps, $wrap);
+}
