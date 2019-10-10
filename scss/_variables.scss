@@ -1,0 +1,468 @@
+// Gray Colors
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$grays: ();
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+// Default Colors
+
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
+$colors: ();
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+// Theme Colors
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+// Color Palette for darkened/lightened colors 
+
+$color-palette: 20%;
+
+
+// Units measures for paddings and margins
+
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 4),
+    7: ($spacer * 5),
+  ),
+  $spacers
+);
+
+// Units measures in percentages for widths & heights
+
+$sizes: ();
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);
+
+// Units measures in pixels for widths & heights
+
+$unit: 100px;
+$units: ();
+$units: map-merge(
+  (
+    100: $unit,
+    200: $unit * 2,
+    300: $unit * 3, 
+    400: $unit * 4,
+    500: $unit * 5,
+    600: $unit * 6, 
+    700: $unit * 7,
+    800: $unit * 8, 
+    900: $unit * 9, 
+    1000: $unit * 10,
+  ),
+  $units
+);
+
+
+// Units measures in pixels for borders radius
+
+$border-sizes: ();
+$border-sizes: map-merge(
+  (
+    3: 3px,
+    5: 5px,
+    10: 10px,
+    20: 10px,
+    25: 25px,
+    50: 50px,
+    75: 75px,
+    100: 100px,
+  ),
+  $border-sizes
+);
+
+
+// Units measures in header tags font sizes
+
+$heading-font: 1rem;
+$heading-fonts: ();
+$heading-fonts: map-merge(
+  (
+    1: ($heading-font * 4),
+    2: ($heading-font * 3),
+    3: ($heading-font * 2.5),
+    4: ($heading-font * 2),
+    5: ($heading-font * 1.5),
+    6: ($heading-font * 1)
+  ),
+  $heading-fonts
+);
+
+
+// Units measures in general font sizes
+
+$font-sizes: ();
+$font-sizes: map-merge(
+  (
+    1: 4rem,
+    2: 3.5rem,
+    3: 3rem,
+    4: 2.5rem,
+    5: 2rem,
+    6: 1.5rem,
+    7: 1.25rem,
+    8: 1rem,
+    9: 0.8rem,
+    10: 0.625rem
+  ),
+  $font-sizes
+);
+
+// FONT PROPERTIES
+
+// Google font-families
+
+$font-families: ();
+$font-families: map-merge(
+  (
+    "Raleway": "Raleway",
+    "Ubuntu": "Ubuntu",
+    "Cormorant-Garamond": "Cormorant Garamond",
+    "Roboto": "Roboto",
+    "Droid Sans": "Droid Sans",
+    "Quicksand": "Quicksand",
+    "Cardo": "Cardo",
+  ),
+
+  $font-families
+);
+
+// Properties for text alignment
+
+$text-align: ();
+$text-align: map-merge(
+  (
+    left: left,
+    right: right,
+    center: center,
+    justify: justify,
+  ),
+  $text-align
+);
+
+// Properties for text decoration
+
+$text-decoration: ();
+$text-decoration: map-merge(
+  (
+    none: none,
+    overline: overline,
+    line-through: line-through,
+    underline: underline,
+  ),
+  $text-decoration
+);
+
+// Properties for text transformation
+
+$text-transform: ();
+$text-transform: map-merge(
+  (
+    upper: uppercase,
+    lower: lowercase,
+    cap: capitalize,
+  ),
+  $text-transform
+);
+
+
+// Properties for font weight
+
+$font-weight: ();
+$font-weight: map-merge(
+  (
+    normal: normal,
+    bold: bold,
+    bolder: bolder,
+    lighter: lighter,
+  ),
+  $font-weight
+);
+
+// BODY
+
+// Settings for the `<body>` element.
+
+$body-bg: $white !default;
+$body-color: $gray-900 !default;
+
+
+// Grid breakpoints
+
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: 
+"default"  5  1300,
+"xl" 4 1200px,
+"lg" 3  992px,
+"md" 2  768px,
+"sm" 1  576px;
+
+$grid-width: 12;
+$grid-widths: ();
+$grid-widths: map-merge(
+  (
+    1: ((1/$grid-width )* 100%),
+    2: ((2/$grid-width )* 100%),
+    3: ((3/$grid-width )* 100%),
+    4: ((4/$grid-width )* 100%),
+    5: ((5/$grid-width )* 100%),
+    6: ((6/$grid-width )* 100%),
+    7: ((7/$grid-width )* 100%),
+    8: ((8/$grid-width )* 100%),
+    9: ((9/$grid-width )* 100%),
+    10: ((10/$grid-width )* 100%),
+    11: ((11/$grid-width )* 100%),
+    12: ((12/$grid-width )* 100%),
+  ),
+  $grid-widths
+);
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  xl: 1140px,
+  lg: 960px,
+  md: 720px,
+  sm: 540px,
+);
+
+// Property/values for positions
+
+$positions: (
+  relative: relative,
+  absolute: absolute,
+  fixed: fixed,
+  sticky: sticky,
+  static: static,
+);
+
+// Property/values for displays
+
+$displays: (
+  flex: flex,
+  grid: grid,
+  block: block,
+  inline-block: inline-block,
+  inline: inline,
+  inherit: inherit,
+  table: table,
+  none: none,
+);
+
+// FLEX POSITIONING
+
+// Property/values for flex-directions
+
+$flex-directions: (
+  row: row,
+  row-reverse: row-reverse,
+  column: column,
+  column-reverse: column-reverse,
+  initial: initial,
+  inherit: inherit,
+);
+
+// Property/values for flex-wraps
+
+$flex-wraps: (
+  wrap: wrap,
+  wrap-reverse: wrap-reverse,
+  nowrap: nowrap,
+) ;
+
+// Property/values for flex justify contents
+
+$justify-contents: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  around: space-around,
+  between: space-between,
+) ;
+
+// Property/values for flex align items
+
+$align-items: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  strtech: stretch,
+  baseline: baseline,
+) ;
+
+// Property/values for flex align self
+
+$align-self: (
+  stretch: stretch,
+  center: center,
+  end: flex-end,
+  start: flex-start,
+  baseline: baseline,
+  initial: initial,
+  inherit: inherit,
+) ;
+
+// Unit measures for flex shrink, grow & orders
+
+$flex-items-props: (
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+) ;
+
+
+// Property/values for overflow
+
+$overflow : (
+  scroll, hidden, auto, visible,
+);
+
+// IMAGES
+
+// Property/values for image object fits
+
+$object-fit: (
+  fill: fill,
+  cover: cover,
+  contain: contain,
+  scale-down: scale-down,
+  none: none,
+);
+
+// Property/values for background-attachment
+
+$bg-attachments: (
+  scroll: scroll,
+  fixed: fixed,
+  local: local,
+  initial: initial,
+  inherit: inherit,
+);
+
+$bg-repeat: (
+  repeat: repeat,
+  repeat-x: repeat-x,
+  repeat-y: repeat-y,
+  no-repeat: no-repeat,
+  initial: initial,
+  inherit: inherit,
+);
+
+$bg-size: (
+  auto: auto, 
+  length: length, 
+  cover: cover, 
+  contain: contain, 
+  initial: initial, 
+  inherit: inherit,
+);
+
+
+// Button
+
+$btn-font-weight: normal;
+$btn-padding: 1rem;
+$btn-font-size: 1rem;
+$btn-border-width: 1px;
