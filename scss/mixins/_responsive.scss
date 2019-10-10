@@ -1,0 +1,36 @@
+@mixin make-responsive {
+    .container-fluid {
+        width: widths(100);
+        padding-right: sizes(3);
+        padding-left: sizes(3);
+        margin-right: widths(auto);
+        margin-left: widths(auto);
+    }
+
+    .row {
+        display: display(flex);
+        flex-wrap: flex-wrap(wrap);
+        margin-right: -1rem;
+        margin-left: -1rem;
+    }
+
+    .no-gutters {
+        margin-right: sizes(0);
+        margin-left: sizes(0);
+        padding-right: sizes(0);
+        padding-left: sizes(0);
+    }
+
+    [class*="col-"]{
+        margin-right: sizes(0);
+        margin-left: sizes(0);  
+    }
+}
+
+@mixin container-max-widths($breakpoints, $num) {
+    .container {
+        width: $breakpoints - 64px;
+        max-width: widths(100);
+        margin: 0 auto;
+   } 
+}
