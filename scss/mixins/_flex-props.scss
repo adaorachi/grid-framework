@@ -1,0 +1,162 @@
+@mixin flex-directions ($infix) {
+    @each $name, $direction in $flex-directions {
+        @if $infix == "default" {
+            .flex-#{$direction}{
+                flex-direction: $direction;
+            }
+        }@else{
+            .flex-#{$infix}-#{$direction}{
+                flex-direction: $direction;
+            }
+        }
+    }
+}
+
+@mixin flex-wraps ($infix) {
+    @each $name, $wrap in $flex-wraps {
+        @if $infix == "default" {
+            .flex-#{$wrap}{
+                flex-wrap: $wrap;
+            }
+        }@else{
+            .flex-#{$infix}-#{$wrap}{
+                flex-wrap: $wrap;
+            }
+        }
+    }
+}
+
+@mixin justify-contents ($infix) {
+    @each $name, $justify in $justify-contents {
+        @if $infix == "default" {
+            .justify-content-#{$name}{
+                justify-content: $justify;
+            }
+        }@else{
+            .justify-content-#{$infix}-#{$name}{
+                justify-content: $justify;
+            }
+        }
+    }
+}
+
+@mixin align-items ($infix) {
+    @each $name, $align in $align-items {
+        @if $infix == "default" {
+            .align-items-#{$name}{
+                align-items: $align;
+            }
+        }@else{
+            .align-items-#{$infix}-#{$name}{
+                align-items: $align;
+            }
+        }
+    }
+}
+
+@mixin align-self ($infix) {
+    @each $name, $align in $align-self {
+        @if $infix == "default" {
+            .align-self-#{$name}{
+                align-self: $align;
+            }
+        }@else{
+            .align-self-#{$infix}-#{$name}{
+                align-self: $align;
+            }
+        }
+    }
+}
+
+@mixin element-centered ($infix) {
+    @if $infix == "default" {
+        .centered-element{
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+    }@else{
+        .centered-element-#{$infix}{
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+    }
+}
+
+@mixin flex-items-props ($infix) {
+    @each $props in $flex-items-props {
+        @if $infix == "default" {
+            .order-#{$props}{
+                order: $props;
+            }
+            .flex-shrink-#{$props}{
+                flex-shrink: $props;
+            }
+            .flex-grow-#{$props}{
+                flex-grow: $props;
+            }
+        }@else{
+            .order-#{$infix}-#{$props}{
+                order: $props;
+            }
+            .flex-shrink-#{$infix}-#{$props}{
+                flex-shrink: $props;
+            }
+            .flex-grow-#{$infix}-#{$props}{
+                flex-grow: $props;
+            }
+        }
+    }
+}
+
+@mixin flex-basis($infix) {
+    @each $num, $flex-basis in $grid-widths {
+        @if $infix == "default" {
+            .flex-basis-#{$num}{
+                flex-basis: $flex-basis;
+                width: $flex-basis;
+            }
+        }@else{
+            .flex-basis-#{$infix}-#{$num}{
+                flex-basis: $flex-basis;
+                width: $flex-basis;
+            }
+        }
+    }
+}
+
+@mixin grid-props ($infix) {
+    @for $props from 1 through 5 {
+        @if $infix == "default" {
+            .grid-row-#{$props} {
+                -ms-grid-rows: $props;
+                grid-template-rows: repeat($props, 1fr);
+            }
+            .grid-column-#{$props} {
+                -ms-grid-columns: $props;
+                grid-template-columns: repeat($props, 1fr);
+            }
+        }
+        @else{
+            .grid-row-#{$infix}-#{$props} {
+                -ms-grid-rows: $props;
+                grid-template-rows: repeat($props, 1fr);
+            }
+            .grid-column-#{$infix}-#{$props} {
+                -ms-grid-columns: $props;
+                grid-template-columns: repeat($props, 1fr);
+            }
+        }
+    }
+}
+
+@mixin grid-gap {
+    $i: 5;
+    @for $props from 1 through 5 {
+        .grid-gap {
+            grid-gap: $props * $i#{px};
+        }
+
+    }
+}
