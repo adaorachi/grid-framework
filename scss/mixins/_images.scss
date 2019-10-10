@@ -1,0 +1,31 @@
+// IMAGES
+
+@mixin images {
+    .img-fluid {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        &.rounded-side {
+            border-radius: 5%;
+        }
+
+        &.rounded {
+            border-radius: 50%;
+        }
+    }
+
+}
+
+@mixin object-fit ($infix) {
+    @each $name, $fit in $object-fit {
+        @if $infix == "default" {
+            .object-fit-#{$name}{
+                object-fit: $fit;
+            }
+        }@else{
+            .object-fit-#{$infix}-#{$name}{
+                object-fit: $fit;
+            }
+        }
+    }
+}
