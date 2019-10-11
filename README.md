@@ -16,7 +16,7 @@ This project was undertaken so as to build a grid-based framework (similar to bo
 
 ## Setup & Live Preview
 This project is built with the basic web page structures and styling. It is pretty simple to setup. All you have to do is to clone the project into your local repository.<br>
-This are preview of sites cloned with this framework - 
+This are preview of sites cloned with this framework - <br>
 <a href="https://raw.githack.com/JayKowski/sass-framework/framework/index.html">Yogalax clone page </a><br>
 <a href="https://raw.githack.com/JayKowski/sass-framework/framework/index2.html">LifeLeck clone page </a>
 
