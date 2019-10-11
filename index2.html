@@ -6,42 +6,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Lifeleck | Grid-Framework</title>
-</head>
-<style>
-    .hero {
-        transform: translateY(85px);
-    }
-
-    .post .text-content:not(.first) {
-        transform: translateY(-50%)
-    }
-
-    .search-keyword .arrow {
-        top: 0;
-        right: 0;
-    }
-    .gallary .overlay {
-        transition: all 500ms;
-    }
-
-    .gallary .overlay:hover {
-        background-color: rgba(0, 0, 0, 0.7);
-    }
-
-    .gallary .overlay:hover::before {
-        content: "\f030";
-        color:#fff;
-        font-size: 40px;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-    }
-
-    @media (max-width: 768px) {
-        .banner-post .text-content {
+    <style>
+        .hero {
+            transform: translateY(85px);
+        }
+    
+        .post .text-content:not(.first) {
             transform: translateY(-50%)
         }
-    }
-</style>
+    
+        .search-keyword .arrow {
+            top: 0;
+            right: 0;
+        }
+        .gallary .overlay {
+            transition: all 500ms;
+        }
+    
+        .gallary .overlay:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    
+        .gallary .overlay:hover::before {
+            content: "\f030";
+            color:#fff;
+            font-size: 40px;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+        }
+    
+        @media (max-width: 768px) {
+            .banner-post .text-content {
+                transform: translateY(-50%)
+            }
+        }
+    </style>
+</head>
+
 <body>
     <div class="wrapper-lifeleck">
         <header>
@@ -140,6 +141,9 @@
             </section>
 
             <section class="subscribe mt-7">
+                <div class="heading">
+                    <h4 hidden>Subscribe</h4>
+                </div>
                 <div class="container-fluid px-5 px-md-4 w-100">
                     <div class="content w-90 py-7 h-100 border-orange-5 m-auto-5 py-lg-4">
                         <div class="content d-flex flex-lg-column align-items-center h-100 text-center">
@@ -166,7 +170,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-8 col-lg-12">
-                            <main>
+                            <div class="main">
                                 <div class="post_1 text-center">
                                     <div class="image">
                                         <img src="https://colorlib.com/preview/theme/lifeleck/img/post/post_12.png" alt="" class="img-fluid">
@@ -291,11 +295,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </main>
+                            </div>
                         </div>
                         
                         <div class="col-4 col-lg-12">
-                            <aside>
+                            <div class="aside">
                                 <div class="search-input bg-gray-200 flex-column flex-lg-row flex-sm-column centered-element px-4 py-4 mb-4">
                                     <div class="search-keyword mb-4 mb-lg-0 mb-sm-4 mx-lg-3 w-100">
                                         <input type="text" placeholder="Search Keyword" class=" h-px-50 border-gray-100-1 px-2 w-100">
@@ -308,7 +312,7 @@
                                 <div class="categories bg-gray-200 d-flex flex-column px-4 py-3 my-4">
                                     <h4 class="d-flex justify-content-between align-items-center">
                                         <span class="font-size-6">Categories</span>
-                                    <div class="w-px-50 w-px-lg-100 hr-orange-2"></div>
+                                    <span class="w-px-50 w-px-lg-100 hr-orange-2"></span>
                                     </h4>
                                     <div class="content font-size-7 my-4 d-lg-grid grid-column-lg-2 grid-column-sm-1 grid-gap-2">
                                         <div class="cat bg-white d-flex justify-content-between align-items-center px-3 py-2 bg-orange-hover c-gray-600 c-white-hover mb-3">
@@ -353,7 +357,7 @@
                                 <div class="popular-feeds bg-gray-200 d-flex flex-column px-4 py-3 my-4">
                                     <h4 class="d-flex justify-content-between align-items-center">
                                         <span class="font-size-6">Popular Feeds</span>
-                                        <div class="w-px-50 w-px-lg-100 hr-orange-2"></div>
+                                        <span class="w-px-50 w-px-lg-100 hr-orange-2"></span>
                                     </h4>
 
                                     <div class="content mt-4 d-lg-grid grid-column-lg-2 grid-column-sm-1 grid-gap-2">
@@ -400,7 +404,7 @@
                                 <div class="popular-feeds bg-gray-200 d-flex flex-column px-4 py-3 my-4">
                                     <h4 class="d-flex justify-content-between align-items-center">
                                         <span class="font-size-6">Share this post</span>
-                                        <div class="w-px-50 w-px-lg-100 hr-orange-2"></div>
+                                        <span class="w-px-50 w-px-lg-100 hr-orange-2"></span>
                                     </h4>
                                     <div class="social-icons d-flex justify-content-start my-3">
                                         <div class="icon mr-3">
@@ -417,13 +421,16 @@
                                         </div>
                                     </div>
                                 </div>
-                            </aside>                        
+                            </div>                        
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="gallary my-4">
+                <div class="heading">
+                    <h5 hidden>Gallery</h5>
+                </div>
                 <div class="content d-grid grid-column-6 grid-column-lg-3 grid-column-sm-2 grid-gap-1">
                     <div class="social-connect pos-relative">
                         <div class="overlay pos-absolute w-100 h-100 centered-element"></div>

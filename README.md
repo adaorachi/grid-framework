@@ -25,7 +25,7 @@ The inspiration to our cloned sites are gotten from the <a href="https://colorli
 
 ## Screenshots
 <p float="left">
-    <img src="images/screenshots.jpg">
+    <img src="images/screenshots.jpg"><br>
     <img src="images/screenshots1.jpg">
 </p>
 <br><br>
