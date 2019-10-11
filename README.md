@@ -23,10 +23,12 @@ This are preview of sites cloned with this framework -
 ## Inspiration
 The inspiration to our cloned sites are gotten from the <a href="https://colorlib.com/preview/theme/yogalax/"> Yogalax (A yoga website)</a> and <a href="https://colorlib.com/preview/theme/lifeleck/"> Lifeleck (A lifestyle blog)</a>. These websites uses a popular css grid framework (Bootstrap), hence our choice to clone them.
 
-
-
 ## Screenshots
-<img src="images/screenshots.jpg"><br><br>
+<p float="left">
+    <img src="images/screenshots.jpg" width="100">
+    <img src="images/screenshots1.jpg" width="100">
+</p>
+<br><br>
 
 ## Technologies
 * HTML5
