@@ -43,4 +43,4 @@ List of features ready and TODOs for future development
 The project is currently finished.
 
 ## Contact
-Created by [@MaryAnn Chukwuka](https://github.com/adaorachi), feel free to contact me!
+Created by [@MaryAnn Chukwuka](https://github.com/adaorachi) and [@Judah Maina](https://github.com/Jaykowski), feel free to contact me!
