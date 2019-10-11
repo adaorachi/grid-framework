@@ -1,0 +1,74 @@
+@mixin padding_margin_single($infix) {
+    @each $num, $size in $spacers{ 
+        $directions: ("right":"r", "left":"l", "top":"t","bottom":"b");
+        $pad: "padding";
+        $mar: "margin";
+        @each $direction-path, $direction in $directions {
+            @if $infix == "default" {
+                .p#{$direction}-#{$num}{
+                    #{$pad}-#{$direction-path}: $size;
+                }
+                .m#{$direction}-#{$num}{
+                    #{$mar}-#{$direction-path}: $size;
+                }
+
+                .m#{$direction}-neg-#{$num}{
+                    #{$mar}-#{$direction-path}: -$size;
+                }
+
+            }
+            @else{
+                .p#{$direction}-#{$infix}-#{$num}{
+                    #{$pad}-#{$direction-path}: $size;
+                }
+                .m#{$direction}-#{$infix}-#{$num}{
+                    #{$mar}-#{$direction-path}: $size;
+                }
+                .m#{$direction}-#{$infix}-neg-#{$num}{
+                    #{$mar}-#{$direction-path}: -$size;
+                }
+            }
+        }
+    }
+}
+
+@mixin padding_margin_double($infix){
+    @each $num, $size in $spacers{  
+        $directions: ("right" "left" "x", "top" "bottom" "y");
+        $pad: "padding";
+        $mar: "margin";
+        @each $direction-path1, $direction-path2, $direction in $directions {
+            @if $infix == "default" {
+                .p#{$direction}-#{$num}{
+                    #{$pad}-#{$direction-path1}: $size;
+                    #{$pad}-#{$direction-path2}: $size;
+                }
+                .m#{$direction}-#{$num}{
+                    #{$mar}-#{$direction-path1}: $size;
+                    #{$mar}-#{$direction-path2}: $size;
+                }
+            }@else{
+                .p#{$direction}-#{$infix}-#{$num}{
+                    #{$pad}-#{$direction-path1}: $size;
+                    #{$pad}-#{$direction-path2}: $size;
+                }
+                .m#{$direction}-#{$infix}-#{$num}{
+                    #{$mar}-#{$direction-path1}: $size;
+                    #{$mar}-#{$direction-path2}: $size;
+                }
+            }
+        }
+
+        @if $infix == "default" {
+            .m-auto-#{$num} {
+                margin: $size auto;
+            }
+        }@else{
+            .m-auto-#{$infix}-#{$num} {
+                margin: $size auto;
+            }
+        }
+
+    }
+
+}

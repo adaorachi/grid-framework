@@ -1,0 +1,15 @@
+@mixin media-queries {
+    @each $infix, $num, $breakpoints in $grid-breakpoints {
+        @if $infix == "default" {
+            @include all-non-media-breakpoints;
+            @include all-media-breakpoints($infix, $breakpoints, $num);
+
+        }@else {
+            @media (max-width: $breakpoints){
+                @include all-media-breakpoints($infix, $breakpoints, $num);
+            }
+        }
+    }
+}
+
+@include media-queries;

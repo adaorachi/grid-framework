@@ -1,0 +1,32 @@
+@mixin all-media-breakpoints($infix, $breakpoints, $num) {
+    @include font-size($infix);
+    @include heading-font($infix);
+    @include container-max-widths($breakpoints, $num);
+    @include width-height($infix);
+    @include padding_margin_single($infix);
+    @include padding_margin_double($infix);
+    @include positions($infix);
+    @include displays($infix);
+    @include flex-wraps($infix);
+    @include flex-directions($infix);
+    @include justify-contents($infix);
+    @include align-items($infix);
+    @include align-self($infix);
+    @include flex-items-props($infix);
+    @include flex-basis($infix);
+    @include element-centered($infix);
+    @include grid-props($infix);
+    @include object-fit($infix);
+    @include col($infix);
+}
+
+@mixin all-non-media-breakpoints{
+    @include nav;
+    @include images;
+    @include make-responsive;
+    @include overflow;
+    @include bg-attachment;
+    @include bg-repeat;
+    @include bg-size;
+    @include grid-gap;
+}

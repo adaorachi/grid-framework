@@ -1,0 +1,144 @@
+.bg-white{
+    background-color: $white;
+}
+
+.bg-dark{
+    background-color: $black;
+}
+
+@each $gray, $color in $grays {
+    .bg-gray-#{$gray}{
+        background-color: $color;
+
+        &-hover:hover {
+            background-color: $color;
+        }
+    }
+
+    .c-gray-#{$gray}{
+        color: $color;
+
+        &-hover:hover {
+            color: $color!important;
+        }
+    }
+
+    $borders: ("border", "border-left", "border-right", "border-top", "border-bottom");
+    @each $border-direction in $borders {
+        .#{$border-direction}-gray-#{$gray}{
+            #{$border-direction}: 1px solid $color;
+        }
+    }
+
+    @for $i from 1 through 10 {
+        .hr-gray-#{$gray}-#{$i} {
+            width: 100%;
+            height: $i#{px};
+            background-color: $color;
+        }
+    }
+}
+
+@each $default, $color in $colors {
+    .bg-#{$default} {
+        background-color: $color;
+
+        &.btn:hover {
+            background-color: darken($color, 20%);
+        }
+
+        &-hover:hover {
+            background-color: $color;
+        }
+    }
+    .c-#{$default} {
+        color: $color;
+
+        &.btn:hover {
+            color: darken($color, 20%);
+        }
+
+        &-hover:hover {
+            color: $color!important;
+        }
+    }
+
+    a.c-#{$default} {
+        color: $color;
+
+        &:hover {
+            color: darken($color, $color-palette);
+        }
+    }
+}
+
+
+@each $default, $color in $colors {
+    .bg-light-#{$default} {
+        background-color: lighten($color, $color-palette);
+    }
+
+    .c-light-#{$default} {
+       color: lighten($color, $color-palette);
+    }
+
+    .bg-dark-#{$default} {
+        background-color: darken($color, $color-palette);
+    }
+
+    .c-dark-#{$default} {
+        color: darken($color, $color-palette);
+     }
+
+     $borders: ("border", "border-left", "border-right", "border-top", "border-bottom");
+    @each $border-direction in $borders {
+        @for $i from 1 through 10 {
+            .#{$border-direction}-#{$default}-#{$i}{
+                #{$border-direction}: $i#{px} solid $color;
+            }
+        }
+    }
+
+    @for $i from 1 through 10 {
+        .hr-#{$default}-#{$i} {
+            width: 100%;
+            height: $i#{px};
+            background-color: $color;
+        }
+    }
+}
+
+
+
+@each $default, $color in $theme-colors {
+    .c-#{$default} {
+        color: $color;   
+        
+        &-hover:hover {
+            color: $color!important;
+        }
+    }
+
+    a.c-#{$default} {
+        color: $color;
+
+        &:hover {
+            color: darken($color, $color-palette);
+        }
+    }
+
+    $borders: ("border", "border-left", "border-right", "border-top", "border-bottom");
+    @each $border-direction in $borders {
+        .#{$border-direction}-#{$default}{
+            #{$border-direction}: 1px solid $color;
+        }
+    }
+
+    @for $i from 1 through 10 {
+        .hr-#{$default}-#{$i} {
+            width: 100%;
+            height: $i#{px};
+            background-color: $color;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+// Button
+.button {
+  cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: $btn-font-weight;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    border: $btn-border-width solid transparent;
+    padding: $btn-padding;
+  
+    &:hover {
+      color: $body-color;
+      text-decoration: none;
+    }
+}
+
+.small-circle-but {
+  width: 10px;
+  height: 10px;
+}

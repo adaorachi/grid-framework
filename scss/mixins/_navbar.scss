@@ -1,0 +1,102 @@
+// NAVBAR
+@mixin nav {
+    .navbar-shadow {
+        box-shadow: 1px 1px 3px #aaa;
+    }
+
+    .navbar {
+        position: positions(relative);
+        display: display(flex);
+        flex-wrap: flex-wrap(wrap);
+        align-items: center;
+        justify-content: space-between;
+        padding: $spacer $spacer;
+        z-index: 9999;
+    }
+
+    .navbar-brand {
+        display: display(inline-block);;
+        margin-right: $spacer;          
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .navbar-nav {
+        display: display(flex);
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        
+        & .nav-link {
+            padding-right: 0;
+            padding-left: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+
+    }
+
+    .nav-list {
+        display: display(flex);
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+      
+        & .nav-link {
+          padding-right: 0;
+          padding-left: 0;
+          text-decoration: none;
+        }
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    
+    
+
+    @media (max-width: 768px) {
+        .navbar .navbar-nav{
+            display: none;
+        }
+
+        .navbar .navbar-nav.open{
+            display: flex;
+        }
+        
+        .navbar-toggler .fa-times {
+            display: none;
+        }
+
+        .navbar-toggler {
+            display: block;
+        }
+
+        .navbar-toggler .toggle {
+            color:rgb(233, 224, 224);
+            font-style: normal;
+            font-weight: bold;
+            text-decoration: inherit;
+            font-size: 25px;
+            padding: 4px 8px;
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgb(233, 224, 224);
+            cursor: pointer;
+        }
+
+        .navbar-toggler .fa-bars.toggle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar-toggler .fa-times.toggle {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+}
