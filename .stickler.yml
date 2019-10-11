@@ -3,8 +3,8 @@ linters:
     config: 'stylelint.config.js'
 
 linters:
-  stylelint:
-    config: 'stylelint.config.js'
+  # Configured linters
+  
 fixers:
     enable: true
 
