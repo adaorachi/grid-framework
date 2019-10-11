@@ -1,3 +1,14 @@
+@mixin icons($size) {
+    width: $size * 2 ;
+    height: $size * 2;
+    padding: $size / 2;
+    text-align: center;
+    font-size: $size;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
 @mixin font-size($infix) {
     @each $num, $size in $font-sizes{
         @if $infix == "default" {
@@ -6,29 +17,28 @@
             }
 
             .icon-circle-#{$num} {
-                width: $size * 2 ;
-                height: $size * 2;
+                @include icons($size);
                 border-radius: 50%;
-                padding: $size / 2;
-                text-align: center;
-                font-size: $size;
-                display: flex;
-                justify-content: center;
-                align-items: center;
             }
 
+            .icon-square-#{$num} {
+                @include icons($size);
+            }
+
+            
+        
         }@else{
             .font-size-#{$infix}-#{$num} {
                 font-size: $size;
             }
 
             .icon-circle-#{$infix}-#{$num} {
-                width: $size * 2 ;
-                height: $size * 2;
+                @include icons($size);
                 border-radius: 50%;
-                padding: $size / 2;
-                text-align: center;
-                font-size: $size;
+            }
+
+            .icon-square-#{$infix}-#{$num} {
+                @include icons($size);
             }
         }
     }
@@ -82,7 +92,7 @@
             }
         }
     }
-
+    
 }
 
 @mixin heading-font($infix) {

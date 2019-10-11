@@ -13,7 +13,7 @@
             border-radius: 50%;
         }
     }
-
+    
 }
 
 @mixin object-fit ($infix) {
@@ -26,6 +26,6 @@
             .object-fit-#{$infix}-#{$name}{
                 object-fit: $fit;
             }
-        }
+        }  
     }
 }

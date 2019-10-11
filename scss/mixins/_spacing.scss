@@ -1,5 +1,5 @@
 @mixin padding_margin_single($infix) {
-    @each $num, $size in $spacers{
+    @each $num, $size in $spacers{ 
         $directions: ("right":"r", "left":"l", "top":"t","bottom":"b");
         $pad: "padding";
         $mar: "margin";
@@ -33,7 +33,7 @@
 }
 
 @mixin padding_margin_double($infix){
-    @each $num, $size in $spacers{
+    @each $num, $size in $spacers{  
         $directions: ("right" "left" "x", "top" "bottom" "y");
         $pad: "padding";
         $mar: "margin";
@@ -58,9 +58,17 @@
                 }
             }
         }
+
+        @if $infix == "default" {
+            .m-auto-#{$num} {
+                margin: $size auto;
+            }
+        }@else{
+            .m-auto-#{$infix}-#{$num} {
+                margin: $size auto;
+            }
+        }
+
     }
 
-    .margin-auto {
-        margin: 0 auto;
-    }
 }

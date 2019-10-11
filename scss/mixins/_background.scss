@@ -1,23 +1,23 @@
 @mixin bg-attachment {
-  @each $props-infix, $props in $bg-attachments {
-    .bg-attachment-#{$props-infix} {
-      background-attachment: $props;
+    @each $props-infix, $props in $bg-attachments{
+        .bg-attachment-#{$props-infix} {
+            background-attachment: $props;
+        }
     }
-  }
 }
 
 @mixin bg-repeat {
-  @each $props-infix, $props in $bg-repeat {
-    .bg-repeat-#{$props-infix} {
-      background-repeat: $props;
+    @each $props-infix, $props in $bg-repeat{
+        .bg-repeat-#{$props-infix} {
+            background-repeat: $props;
+        }
     }
-  }
 }
 
 @mixin bg-size {
-  @each $props-infix, $props in $bg-size {
-    .bg-size-#{$props-infix} {
-      background-size: $props;
+    @each $props-infix, $props in $bg-size{
+        .bg-size-#{$props-infix} {
+            background-size: $props;
+        }
     }
-  }
 }

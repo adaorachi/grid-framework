@@ -8,7 +8,7 @@
             .flex-#{$infix}-#{$direction}{
                 flex-direction: $direction;
             }
-        }
+        }  
     }
 }
 
@@ -22,7 +22,7 @@
             .flex-#{$infix}-#{$wrap}{
                 flex-wrap: $wrap;
             }
-        }
+        }  
     }
 }
 
@@ -36,7 +36,7 @@
             .justify-content-#{$infix}-#{$name}{
                 justify-content: $justify;
             }
-        }
+        }  
     }
 }
 
@@ -50,7 +50,7 @@
             .align-items-#{$infix}-#{$name}{
                 align-items: $align;
             }
-        }
+        }  
     }
 }
 
@@ -64,7 +64,7 @@
             .align-self-#{$infix}-#{$name}{
                 align-self: $align;
             }
-        }
+        }  
     }
 }
 
@@ -81,7 +81,7 @@
             justify-content: center;
             align-items: center
         }
-    }
+    }  
 }
 
 @mixin flex-items-props ($infix) {
@@ -106,7 +106,7 @@
             .flex-grow-#{$infix}-#{$props}{
                 flex-grow: $props;
             }
-        }
+        }  
     }
 }
 
@@ -127,7 +127,7 @@
 }
 
 @mixin grid-props ($infix) {
-    @for $props from 1 through 5 {
+    @for $props from 1 through 10 {
         @if $infix == "default" {
             .grid-row-#{$props} {
                 -ms-grid-rows: $props;
@@ -147,14 +147,14 @@
                 -ms-grid-columns: $props;
                 grid-template-columns: repeat($props, 1fr);
             }
-        }
+        }        
     }
 }
 
 @mixin grid-gap {
     $i: 5;
     @for $props from 1 through 5 {
-        .grid-gap {
+        .grid-gap-#{$props} {
             grid-gap: $props * $i#{px};
         }
 

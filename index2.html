@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Lifeleck | Grid-Framework</title>
+</head>
+<style>
+    .hero {
+        transform: translateY(85px);
+    }
+
+    .post .text-content:not(.first) {
+        transform: translateY(-50%)
+    }
+
+    .search-keyword .arrow {
+        top: 0;
+        right: 0;
+    }
+    .gallary .overlay {
+        transition: all 500ms;
+    }
+
+    .gallary .overlay:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .gallary .overlay:hover::before {
+        content: "\f030";
+        color:#fff;
+        font-size: 40px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+
+    @media (max-width: 768px) {
+        .banner-post .text-content {
+            transform: translateY(-50%)
+        }
+    }
+</style>
+<body>
+    <div class="wrapper-lifeleck">
+        <header>
+            <nav class="navbar d-flex flex-md-column navbar-shadow px-6 px-lg-4 py-4 pos-fixed w-100 bg-white flex-nowrap">
+                <div class="d-md-flex justify-content-md-between w-md-100 flex-1">
+                    <div class="logo">
+                        <a href="#" class="navbar-brand">
+                            <img src="https://colorlib.com/preview/theme/lifeleck/img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="navbar-toggler">
+                        <i class="fas fa-bars toggle"></i>
+                        <i class="fas fa-times toggle"></i>
+                    </div>
+                </div>
+
+                <div class="navbar-nav flex-row flex-md-column align-self-md-start align-items-md-start flex-2 font-size-8">
+                    <ul class="d-flex my-0 flex-md-column">
+                        <li class="nav-list mr-4 my-md-3 mr-md-0">
+                            <a href="#" class="nav-link c-gray-dark c-orange-hover">Home</a>
+                        </li>
+                        <li class="nav-list mr-4 my-md-3 mr-md-0">
+                            <a href="#" class="nav-link c-gray-dark c-orange-hover">Archive</a>
+                        </li>
+                        <li class="nav-list mr-4 my-md-3 mr-md-0">
+                            <a href="#" class="nav-link c-gray-dark c-orange-hover">Category</a>
+                        </li>
+                        <li class="nav-list mr-4 my-md-3 mr-md-0">
+                            <a href="#" class="nav-link c-gray-dark c-orange-hover">Contact</a>
+                        </li>
+                        <li class="nav-list mr-4 my-md-3 mr-md-0">
+                            <a href="#" class="nav-link c-gray-dark c-orange-hover">Pages</a>
+                        </li>
+                    </ul>
+                    <div class="header-icons centered-element flex-grow-1">
+                        <div class="px-2">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="px-2">
+                            |
+                        </div>
+                        <div class="px-2">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="px-2">
+                            <i class="fab fa-twitter"></i>
+                        </div>                
+                        <div class="px-2">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="px-2">
+                            <i class="fab fa-skype"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <section class="banner-post mb-7">
+                <div class="container-fluid no-gutters px-1">
+                    <div class="d-grid grid-column-3 grid-column-lg-2 grid-column-sm-1 grid-gap-1 content">
+                        <div class="banner d-flex flex-column pos-md-relative">
+                            <div class="image">
+                                <img src="https://colorlib.com/preview/theme/lifeleck/img/banner_blog/banner_blog_1.png" alt="" class="h-px-500 h-px-md-300 img-fluid object-fit-cover">
+                            </div>
+                            <div class="text-content d-flex flex-column centered-element mt-5 py-3 px-5 bg-white w-md-80 m-auto-md-0">
+                                <h5 class="font-size-8 c-orange mb-2">Fashion / Life Style</h5>
+                                <h3 class="font-size-5 font-size-md-6 text-center line-height-3">All said replenish years void kind say void</h3>
+                                <div class="date_posted mt-4 c-gray-500 font-size-9">Posted on April 15, 2019</div>
+                            </div>
+                        </div>
+                        <div class="banner d-flex flex-column pos-md-relative">
+                            <div class="image">
+                                <img src="https://colorlib.com/preview/theme/lifeleck/img/banner_blog/banner_blog_2.png" alt="" 
+                                class="h-px-500 h-px-md-300 img-fluid object-fit-cover">
+                            </div>
+                            <div class="text-content d-flex flex-column centered-element mt-5 py-3 px-5 bg-white w-md-80 m-auto-md-0">
+                                <h5 class="font-size-8 c-orange mb-2">Fashion / Life Style</h5>
+                                <h3 class="font-size-5 font-size-md-6 text-center line-height-3">All said replenish years void kind say void</h3>
+                                <div class="date_posted mt-4 c-gray-500 font-size-9">Posted on April 15, 2019</div>
+                            </div>
+                        </div>
+                        <div class="banner d-flex flex-column pos-md-relative">
+                            <div class="image">
+                                <img src="https://colorlib.com/preview/theme/lifeleck/img/banner_blog/banner_blog_3.png" alt="" class="h-px-500 h-px-md-300 img-fluid object-fit-cover">
+                            </div>
+                            <div class="text-content d-flex flex-column centered-element mt-5 py-3 px-5 bg-white w-md-80 m-auto-md-0">
+                                <h5 class="font-size-8 c-orange mb-2">Fashion / Life Style</h5>
+                                <h3 class="font-size-5 font-size-md-6 text-center line-height-3">All said replenish years void kind say void</h3>
+                                <div class="date_posted mt-4 c-gray-500 font-size-9">Posted on April 15, 2019</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subscribe mt-7">
+                <div class="container-fluid px-5 px-md-4 w-100">
+                    <div class="content w-90 py-7 h-100 border-orange-5 m-auto-5 py-lg-4">
+                        <div class="content d-flex flex-lg-column align-items-center h-100 text-center">
+                            <div class="sub  font-size-6 px-4 my-lg-2">
+                                Subscribe Our Newsletter
+                            </div>
+                            <div class="d-flex flex-sm-column my-lg-2">
+                                <div class="name px-4 mb-md-3">
+                                    <input type="text" placeholder="Your name" class="w-100 h-px-50 border-gray-100-1 px-2">
+                                </div>
+                                <div class="email px-4">
+                                    <input type="email" placeholder="Your email" class="w-100 h-px-50 border-gray-100-1 px-2">
+                                </div>
+                            </div>
+                            <div class="sub-button  px-4 my-lg-2">
+                                <a href="#" class="btn bg-orange c-white px-5 h-px-50 border-orange-1 centered-element">Subscribe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="post pt-7 px-7 px-lg-5 px-md-1 mx-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8 col-lg-12">
+                            <main>
+                                <div class="post_1 text-center">
+                                    <div class="image">
+                                        <img src="https://colorlib.com/preview/theme/lifeleck/img/post/post_12.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-content first d-flex flex-column centered-element py-4 px-5 bg-white w-75 w-md-90 m-auto-0 pos-relative">
+                                        <h5 class="font-size-8 c-orange mb-2">Fashion / Life Style</h5>
+                                        <h3 class="font-size-5 font-size-md-6 text-center line-height-3">All said replenish years void kind say void</h3>
+                                        <div class="date_posted mt-4 c-gray-500 font-size-8">Posted on April 15, 2019</div>
+                                    </div>
+                                </div>
+                                <div class="row px-md-5">
+                                    <div class="col-6 col-md-12">
+                                        <div class="post_2 text-center">
+                                            <div class="image">
+                                                <img src="https://colorlib.com/preview/theme/lifeleck/img/post/post_18.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="text-content d-flex flex-column centered-element py-4 py-3 px-5 bg-white w-90 m-auto-0 pos-relative">
+                                                <h5 class="font-size-8 c-orange mb-2">Fashion / Life Style</h5>
+                                                <a href="#">
+                                                    <h3 class="font-size-5 text-center line-height-3 font-size-6">Your life is a product your right decisions</h3>
+                                                </a>
+                                                <div class="date_posted mt-4 c-gray-500 font-size-8">Posted on April 15, 2019</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-12">
+                                        <div class="post_3 text-center">
+                                            <div class="image">
+                                                <img src="https://colorlib.com/preview/theme/lifeleck/img/post/post_19.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="text-content d-flex flex-column centered-element py-4 py-3 px-5 bg-white w-90 m-auto-0 pos-relative">
+                                                <h5 class="font-size-8 c-orange mb-2">Fashion / Life Style</h5>
+                                                <a href="#">
+                                                    <h3 class="font-size-5 text-center line-height-3 font-size-6">Your life is a product your right decisions</h3>
+                                                </a>
+                                                <div class="date_posted mt-4 c-gray-500 font-size-8">Posted on April 15, 2019</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-12">
+                                        <div class="post_4 text-center">
+                                            <div class="image">
+                                                <img src="https://colorlib.com/preview/theme/lifeleck/img/post/post_20.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="text-content d-flex flex-column centered-element py-4 py-3 px-5 bg-white w-90 m-auto-0 pos-relative">
+                                                <h5 class="font-size-8 c-orange mb-2">Fashion / Life Style</h5>
+                                                <a href="#">
+                                                    <h3 class="font-size-5 text-center line-height-3 font-size-6">Your life is a product your right decisions</h3>
+                                                </a>
+                                                <div class="date_posted mt-4 c-gray-500 font-size-8">Posted on April 15, 2019</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-12">
+                                        <div class="post_5 text-center">
+                                            <div class="image">
+                                                <img src="https://colorlib.com/preview/theme/lifeleck/img/post/post_21.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="text-content d-flex flex-column centered-element py-4 py-3 px-5 bg-white w-90 m-auto-0 pos-relative">
+                                                <h5 class="font-size-8 c-orange mb-2">Fashion / Life Style</h5>
+                                                <a href="#">
+                                                    <h3 class="font-size-5 text-center line-height-3 font-size-6">Your life is a product your right decisions</h3>
+                                                </a>
+                                                <div class="date_posted mt-4 c-gray-500 font-size-8">Posted on April 15, 2019</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-12">
+                                        <div class="post_6 text-center">
+                                            <div class="image">
+                                                <img src="https://colorlib.com/preview/theme/lifeleck/img/post/post_22.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="text-content d-flex flex-column centered-element py-4 py-3 px-5 bg-white w-90 m-auto-0 pos-relative">
+                                                <h5 class="font-size-8 c-orange mb-2">Fashion / Life Style</h5>
+                                                <a href="#">
+                                                    <h3 class="font-size-5 text-center line-height-3 font-size-6">Your life is a product your right decisions</h3>
+                                                </a>
+                                                <div class="date_posted mt-4 c-gray-500 font-size-8">Posted on April 15, 2019</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-12">
+                                        <div class="post_7 text-center">
+                                            <div class="image">
+                                                <img src="https://colorlib.com/preview/theme/lifeleck/img/post/post_23.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="text-content d-flex flex-column centered-element py-4 py-3 px-5 bg-white w-90 m-auto-0 pos-relative">
+                                                <h5 class="font-size-8 c-orange mb-2">Fashion / Life Style</h5>
+                                                <a href="#">
+                                                    <h3 class="font-size-5 text-center line-height-3 font-size-6">Your life is a product your right decisions</h3>
+                                                </a>
+                                                <div class="date_posted mt-4 c-gray-500 font-size-8">Posted on April 15, 2019</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-12">
+                                        <div class="post_8 text-center">
+                                            <div class="image">
+                                                <img src="https://colorlib.com/preview/theme/lifeleck/img/post/post_24.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="text-content d-flex flex-column centered-element py-4 py-3 px-5 bg-white w-90 m-auto-0 pos-relative">
+                                                <h5 class="font-size-8 c-orange mb-2">Fashion / Life Style</h5>
+                                                <a href="#">
+                                                    <h3 class="font-size-5 text-center line-height-3 font-size-6">Your life is a product your right decisions</h3>
+                                                </a>
+                                                <div class="date_posted mt-4 c-gray-500 font-size-8">Posted on April 15, 2019</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-12">
+                                        <div class="post_9 text-center">
+                                            <div class="image">
+                                                <img src="https://colorlib.com/preview/theme/lifeleck/img/post/post_25.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="text-content d-flex flex-column centered-element py-4 py-3 px-5 bg-white w-90 m-auto-0 pos-relative">
+                                                <h5 class="font-size-8 c-orange mb-2">Fashion / Life Style</h5>
+                                                <a href="#">
+                                                    <h3 class="font-size-5 text-center line-height-3 font-size-6">Your life is a product your right decisions</h3>
+                                                </a>
+                                                <div class="date_posted mt-4 c-gray-500 font-size-8">Posted on April 15, 2019</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                        
+                        <div class="col-4 col-lg-12">
+                            <aside>
+                                <div class="search-input bg-gray-200 flex-column flex-lg-row flex-sm-column centered-element px-4 py-4 mb-4">
+                                    <div class="search-keyword mb-4 mb-lg-0 mb-sm-4 mx-lg-3 w-100">
+                                        <input type="text" placeholder="Search Keyword" class=" h-px-50 border-gray-100-1 px-2 w-100">
+                                    </div>
+                                    <div class="search-keyword bg-orange w-100 text-center h-px-50 centered-element mx-lg-3">
+                                    <a href="#" class="c-white">Search</a>
+                                    </div>
+                                </div>
+
+                                <div class="categories bg-gray-200 d-flex flex-column px-4 py-3 my-4">
+                                    <h4 class="d-flex justify-content-between align-items-center">
+                                        <span class="font-size-6">Categories</span>
+                                    <div class="w-px-50 w-px-lg-100 hr-orange-2"></div>
+                                    </h4>
+                                    <div class="content font-size-7 my-4 d-lg-grid grid-column-lg-2 grid-column-sm-1 grid-gap-2">
+                                        <div class="cat bg-white d-flex justify-content-between align-items-center px-3 py-2 bg-orange-hover c-gray-600 c-white-hover mb-3">
+                                            <div class="cat-text">
+                                            Culture
+                                            </div>
+                                            <div class="cat-num">(15)</div>
+                                        </div>
+                                        <div class="cat bg-white d-flex justify-content-between align-items-center px-3 py-2 bg-orange-hover c-gray-600 c-white-hover mb-3">
+                                            <div class="cat-text">
+                                                Creative Design
+                                            </div>
+                                            <div class="cat-num">(15)</div>
+                                        </div>
+                                        <div class="cat bg-white d-flex justify-content-between align-items-center px-3 py-2 bg-orange-hover c-gray-600 c-white-hover mb-3">
+                                            <div class="cat-text">
+                                                Illustration
+                                            </div>
+                                            <div class="cat-num">(15)</div>
+                                        </div>
+                                        <div class="cat bg-white d-flex justify-content-between align-items-center px-3 py-2 bg-orange-hover c-gray-600 c-white-hover mb-3">
+                                            <div class="cat-text">
+                                                Production
+                                            </div>
+                                            <div class="cat-num">(15)</div>
+                                        </div>
+                                        <div class="cat bg-white d-flex justify-content-between align-items-center px-3 py-2 bg-orange-hover c-gray-600 c-white-hover mb-3">
+                                            <div class="cat-text">
+                                                Management
+                                            </div>
+                                            <div class="cat-num">(15)</div>
+                                        </div>
+                                        <div class="cat bg-white d-flex justify-content-between align-items-center px-3 py-2 bg-orange-hover c-gray-600 c-white-hover mb-3">
+                                            <div class="cat-text">
+                                                Branding
+                                            </div>
+                                            <div class="cat-num">(15)</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popular-feeds bg-gray-200 d-flex flex-column px-4 py-3 my-4">
+                                    <h4 class="d-flex justify-content-between align-items-center">
+                                        <span class="font-size-6">Popular Feeds</span>
+                                        <div class="w-px-50 w-px-lg-100 hr-orange-2"></div>
+                                    </h4>
+
+                                    <div class="content mt-4 d-lg-grid grid-column-lg-2 grid-column-sm-1 grid-gap-2">
+                                        <div class="feed mb-5">
+                                            <div class="image">
+                                                <img src="https://colorlib.com/preview/theme/lifeleck/img/sidebar/sidebar_1.png" alt="" class="img-fluid">
+                                            </div>
+                                            <h6 class="title font-size-7 line-height-5 mt-3 c-orange-hover">
+                                            Subdue lesser beast winged bearing meat tree one
+                                            </h6>
+                                            <div class="author font-size-8 mt-2">
+                                                <span>By Michal </span>
+                                                <span class="c-gray-600">/ March 30</span>
+                                            </div>
+                                        </div>
+                                        <div class="feed mb-5">
+                                            <div class="image">
+                                                <img src="https://colorlib.com/preview/theme/lifeleck/img/sidebar/sidebar_2.png" alt="" class="img-fluid">
+                                            </div>
+                                            <h6 class="title font-size-7 line-height-5 mt-3 c-orange-hover">
+                                            Subdue lesser beast winged bearing meat tree one
+                                            </h6>
+                                            <div class="author font-size-8 mt-2">
+                                                <span>By Michal </span>
+                                                <span class="c-gray-600">/ March 30</span>
+                                            </div>
+                                        </div>
+                                        <div class="feed mb-5">
+                                            <div class="image">
+                                                <img src="https://colorlib.com/preview/theme/lifeleck/img/sidebar/sidebar_3.png" alt="" class="img-fluid">
+                                            </div>
+                                            <h6 class="title font-size-7 line-height-5 mt-3 c-orange-hover">
+                                            Subdue lesser beast winged bearing meat tree one
+                                            </h6>
+                                            <div class="author font-size-8 mt-2">
+                                                <span>By Michal </span>
+                                                <span class="c-gray-600">/ March 30</span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+
+                                <div class="popular-feeds bg-gray-200 d-flex flex-column px-4 py-3 my-4">
+                                    <h4 class="d-flex justify-content-between align-items-center">
+                                        <span class="font-size-6">Share this post</span>
+                                        <div class="w-px-50 w-px-lg-100 hr-orange-2"></div>
+                                    </h4>
+                                    <div class="social-icons d-flex justify-content-start my-3">
+                                        <div class="icon mr-3">
+                                            <i class="fab fa-facebook-f icon-square-7 bg-white bg-orange-hover c-white-hover"></i>
+                                        </div>
+                                        <div class="icon mr-3">
+                                            <i class="fab fa-twitter icon-square-7 bg-white bg-orange-hover c-white-hover"></i>
+                                        </div>
+                                        <div class="icon mr-3">
+                                            <i class="fab fa-pinterest icon-square-7 bg-white bg-orange-hover c-white-hover"></i>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fab fa-instagram icon-square-7 bg-white bg-orange-hover c-white-hover"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallary my-4">
+                <div class="content d-grid grid-column-6 grid-column-lg-3 grid-column-sm-2 grid-gap-1">
+                    <div class="social-connect pos-relative">
+                        <div class="overlay pos-absolute w-100 h-100 centered-element"></div>
+                        <img src="https://colorlib.com/preview/theme/lifeleck/img/insta/instagram_1.png" alt="" class="img-fluid object-fit-cover">
+                    </div>
+                    <div class="social-connect pos-relative">
+                        <div class="overlay pos-absolute w-100 h-100 centered-element"></div>
+                        <img src="https://colorlib.com/preview/theme/lifeleck/img/insta/instagram_2.png" alt="" class="img-fluid object-fit-cover">
+                    </div>
+                    <div class="social-connect pos-relative">
+                        <div class="overlay pos-absolute w-100 h-100 centered-element"></div>
+                        <img src="https://colorlib.com/preview/theme/lifeleck/img/insta/instagram_3.png" alt="" class="img-fluid object-fit-cover">
+                    </div>
+                    <div class="social-connect pos-relative">
+                        <div class="overlay pos-absolute w-100 h-100 centered-element"></div>
+                        <img src="https://colorlib.com/preview/theme/lifeleck/img/insta/instagram_4.png" alt="" class="img-fluid object-fit-cover">
+                    </div>
+                    <div class="social-connect pos-relative">
+                        <div class="overlay pos-absolute w-100 h-100 centered-element"></div>
+                        <img src="https://colorlib.com/preview/theme/lifeleck/img/insta/instagram_5.png" alt="" class="img-fluid object-fit-cover">
+                    </div>
+                    <div class="social-connect pos-relative">
+                        <div class="overlay pos-absolute w-100 h-100 centered-element"></div>
+                        <img src="https://colorlib.com/preview/theme/lifeleck/img/insta/instagram_6.png" alt="" class="img-fluid object-fit-cover">
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-us my-7">
+                <div class="container">
+                    <div class="content d-grid grid-column-4 grid-gap-4 grid-column-lg-2 grid-column-sm-1">
+                        <div class="item px-4">
+                            <h4 class="text-transform-cap font-size-7 mb-3 c-gray-800">About us</h4>
+                            <p class="c-gray-600">Heaven fruitful doesn't over the lesser days appear cree ping seasons so behold bea Place likeness female form. Lesser Was green image lights fowl.</p>
+                        </div>
+
+                        <div class="item px-4">
+                            <h4 class="text-transform-cap font-size-7 mb-3 c-gray-800">Contact info</h4>
+                            <p class="c-gray-600">Address :Your address goes here, your demo address.</p>
+                            <p class="c-gray-600">Phone : +8880 44338899</p>
+                            <p class="c-gray-600">Email : info@colorlib.com</p>
+                        </div>
+
+                        <div class="item px-4">
+                            <h4 class="text-transform-cap font-size-7 mb-3 c-gray-800">Important link</h4>
+                            <ul class="">
+                                <li class="nav-list"> 
+                                    <a href="#" class="nav-link c-gray-600">WHMCS-bridge</a>
+                                </li>
+                                <li class="nav-list"> 
+                                    <a href="#" class="nav-link c-gray-600">Search Domain</a>
+                                </li>
+                                <li class="nav-list"> 
+                                    <a href="#" class="nav-link c-gray-600">My Account</a>
+                                </li>
+                                <li class="nav-list"> 
+                                    <a href="#" class="nav-link c-gray-600">Shopping Cart</a>
+                                </li>
+                                <li class="nav-list"> 
+                                    <a href="#" class="nav-link c-gray-600">Our Main Shop</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="item px-4">
+                            <h4 class="text-transform-cap font-size-7 mb-3 c-gray-800">Newsletter</h4>
+                            <p class="c-gray-600">Heaven fruitful doesn't over the lesser days. Appear creeping seasons so behold days open</p>
+                            <div class="search-keyword mb-4 w-100 pos-relative">
+                                <input type="email" placeholder="Your Email Address" class=" h-px-50 border-gray-100-1 px-2 w-100">
+                                <i class="arrow fas fa-arrow-right icon-square-6 bg-orange c-white pos-absolute h-px-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer mt-4">
+                <div class="container">
+                    <div class="border-top-gray-300 py-4 px-4 c-gray-700 d-flex flex-md-column justify-content-between justify-content-md-center align-items-center text-center">
+                        <p class="my-0">Copyright © 2019 All rights reserved | This template is Made with <i class="fas fa-heart c-orange"></i> by Colorlib</p>
+
+                        <div class="footer-icons mt-md-3">
+                            <a href="#" class="c-gray-700 c-orange-hover">
+                                <i class="fab fa-facebook-f mr-2"></i>
+                            </a>
+                            <a href="#" class="c-gray-700 c-orange-hover">
+                                <i class="fab fa-twitter mr-2"></i>
+                            </a>
+                            <a href="#" class="c-gray-700 c-orange-hover">
+                                <i class="fab fa-instagram mr-2"></i>
+                            </a>
+                            <a href="#" class="c-gray-700 c-orange-hover">
+                                <i class="fab fa-skype mr-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+               
+            $(".navbar-toggler .fa-bars").click(function(){
+                $(".navbar .navbar-nav").toggleClass('open');
+                $(this).css('display','none');
+                $(".navbar-toggler .fa-times").css('display','flex');
+                
+            });
+            $(".navbar-toggler .fa-times").click(function(){
+                $(".navbar .navbar-nav").toggleClass('open');
+                $(this).css('display','none');
+                $(".navbar-toggler .fa-bars").css('display','flex');
+
+            });     
+            
+        });
+    </script>
+</body>
+</html>

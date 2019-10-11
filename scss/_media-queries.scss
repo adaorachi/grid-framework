@@ -3,6 +3,7 @@
         @if $infix == "default" {
             @include all-non-media-breakpoints;
             @include all-media-breakpoints($infix, $breakpoints, $num);
+
         }@else {
             @media (max-width: $breakpoints){
                 @include all-media-breakpoints($infix, $breakpoints, $num);
